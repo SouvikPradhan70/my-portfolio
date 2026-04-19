@@ -1,0 +1,23 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="container nav-content">
+
+    <h2>Souvik's Portfolio</h2>
+
+    <!-- Hamburger -->
+    <div class="hamburger" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Links -->
+    <div class="links" [class.active]="isMenuOpen">
+      <a href="#home" (click)="toggleMenu()">Home</a>
+      <a href="#about" (click)="toggleMenu()">About</a>
+      <a href="#tech" (click)="toggleMenu()">Tech</a>
+      <a href="#projects" (click)="toggleMenu()">Projects</a>
+      <a href="#contact" (click)="toggleMenu()">Contact</a>
+    </div>
+
+  </div>
+</nav>
